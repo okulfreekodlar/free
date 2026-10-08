@@ -1,16 +1,30 @@
- switch(kupon)
- {
-     case 'A':
-         double atutar = toplam - 50;
-         break;
+Console.WriteLine("Agırlık giriniz");
+              int agırlık = Convert.ToInt32(Console.ReadLine());
 
-     case 'B':
-         double btutar = toplam * 0.05;
-         break;
-     case 'X':
-         Console.WriteLine("indirim yok");
-         break;
+              if (agırlık > 5)
+              {
 
-     default:
-         Console.WriteLine("Lutfen Kuponu Dogru Giriniz");
-         break;
+                  Console.WriteLine("Firma Seciniz");
+                  Console.WriteLine("1 - A firması");
+                  Console.WriteLine("2 - B firması");
+                  int secim1 = Convert.ToInt32(Console.ReadLine());
+
+                  if (secim1 > 2)
+                  {
+                      Console.WriteLine("Lutfen Firmayı Dogru Seciniz");
+                  }
+                  else
+                  {
+                      int secim2 = Convert.ToInt32(Console.ReadLine());
+                      switch (secim2)
+                      {
+                          case 1:
+                              Console.WriteLine("A firmasını sectiniz");
+                              break;
+
+                          case 2:
+                              Console.WriteLine("B firmasını sectiniz");
+                              break;
+                      }
+                  }
+              }
