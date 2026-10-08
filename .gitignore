@@ -1,0 +1,16 @@
+ switch(kupon)
+ {
+     case 'A':
+         double atutar = toplam - 50;
+         break;
+
+     case 'B':
+         double btutar = toplam * 0.05;
+         break;
+     case 'X':
+         Console.WriteLine("indirim yok");
+         break;
+
+     default:
+         Console.WriteLine("Lutfen Kuponu Dogru Giriniz");
+         break;
